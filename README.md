@@ -2,7 +2,7 @@
 ## AIM
 To study and analyze Ideal Sampling. The experiment aims to verify the sampling theorem, analyze spectral characteristics, and understand signal reconstruction.
 ## TOOLS REQUIRED
-Personal computer installed with SCILAB
+Python: A versatile programming language used for scientific computing and signal processing. NumPy: A powerful numerical library in Python for performing array-based operations and mathematical computations. Matplotlib: A plotting library for generating high-quality graphs and visualizations of data, essentialfor demonstrating the sampling process.
 ## PROGRAM
 ```#Impulse Sampling
 import numpy as np
