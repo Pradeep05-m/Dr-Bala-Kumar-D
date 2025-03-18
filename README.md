@@ -55,7 +55,12 @@ ylabel('Amplitude');
 legend('Continuous-time', 'Reconstructed from 20 Hz samples','Reconstructed from 10 Hz samples','Reconstructed from 6 Hz samples');
 ```
 ## OUTPUT WAVEFORM
-![image](https://github.com/user-attachments/assets/0b97bcd0-0665-4262-b761-21a0b32ca8b0)
+![WhatsApp Image 2025-03-18 at 11 13 37_51501a32](https://github.com/user-attachments/assets/3e43da16-4181-4c80-99c0-fac285e8a5af)
+![WhatsApp Image 2025-03-18 at 11 13 44_34ddc6a5](https://github.com/user-attachments/assets/cfc13ce2-6114-4af7-8e0e-44cf95aca8fb)
+![WhatsApp Image 2025-03-18 at 11 14 11_3dc7face](https://github.com/user-attachments/assets/84d8742d-102f-4a74-9de0-7276cc27fc60)
+
+
+
 
 ## RESULT
 The result of ideal sampling is a discrete-time signal that retains all the information of the original continuous-time signal is obtained and output is verified.
