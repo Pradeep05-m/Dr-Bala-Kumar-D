@@ -1,6 +1,6 @@
-# NATURAL SAMPLING
+# IDEAL SAMPLING
 ## AIM
-To convert a continuous-time signal into a discrete-time signal while preserving all its frequency components. This allows perfect reconstruction of the original signal without aliasing or distortion.
+To study and analyze Ideal Sampling. The experiment aims to verify the sampling theorem, analyze spectral characteristics, and understand signal reconstruction.
 ## TOOLS REQUIRED
 Personal computer installed with SCILAB
 ## PROGRAM
