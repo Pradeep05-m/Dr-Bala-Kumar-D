@@ -4,7 +4,7 @@ To study and analyze Ideal Sampling. The experiment aims to verify the sampling 
 ## TOOLS REQUIRED
 Python: A versatile programming language used for scientific computing and signal processing. NumPy: A powerful numerical library in Python for performing array-based operations and mathematical computations. Matplotlib: A plotting library for generating high-quality graphs and visualizations of data, essentialfor demonstrating the sampling process.
 ## PROGRAM
-```#Impulse Sampling
+```
 import numpy as np
 import matplotlib.pyplot as plt
 from scipy.signal import resample
@@ -13,7 +13,7 @@ t = np.arange(0, 1, 1/fs)
 f = 5
 signal = np.sin(2 * np.pi * f * t)
 plt.figure(figsize=(10, 4))
-plt.plot(t, signal, label='Continuous Signal')
+plt.plot(t, signal)
 plt.title('Continuous Signal (fs = 100 Hz)')
 plt.xlabel('Time [s]')
 plt.ylabel('Amplitude')
@@ -23,8 +23,8 @@ plt.show()
 t_sampled = np.arange(0, 1, 1/fs)
 signal_sampled = np.sin(2 * np.pi * f * t_sampled)
 plt.figure(figsize=(10, 4))
-plt.plot(t, signal, label='Continuous Signal', alpha=0.7)
-plt.stem(t_sampled, signal_sampled, linefmt='r-', markerfmt='ro', basefmt='r-', label='Sampled Signal (fs = 100 Hz)')
+plt.plot(t, signal, alpha=0.7)
+plt.stem(t_sampled, signal_sampled, linefmt='r-', markerfmt='ro', basefmt='r-')
 plt.title('Sampling of Continuous Signal (fs = 100 Hz)')
 plt.xlabel('Time [s]')
 plt.ylabel('Amplitude')
@@ -33,22 +33,18 @@ plt.legend()
 plt.show()
 reconstructed_signal = resample(signal_sampled, len(t))
 plt.figure(figsize=(10, 4))
-plt.plot(t, signal, label='Continuous Signal', alpha=0.7)
-plt.plot(t, reconstructed_signal, 'r--', label='Reconstructed Signal (fs = 100 Hz)')
+plt.plot(t, reconstructed_signal, 'r--')
 plt.title('Reconstruction of Sampled Signal (fs = 100 Hz)')
 plt.xlabel('Time [s]')
 plt.ylabel('Amplitude')
 plt.grid(True)
 plt.legend()
 plt.show()
-
 ```
 ## OUTPUT WAVEFORM
-![WhatsApp Image 2025-03-18 at 11 13 37_51501a32](https://github.com/user-attachments/assets/3e43da16-4181-4c80-99c0-fac285e8a5af)
-![WhatsApp Image 2025-03-18 at 11 13 44_34ddc6a5](https://github.com/user-attachments/assets/cfc13ce2-6114-4af7-8e0e-44cf95aca8fb)
-
-
-
+![image](https://github.com/user-attachments/assets/8e581f12-afa7-4c61-9ea8-f166bb800136)
+![image](https://github.com/user-attachments/assets/1ce06990-914b-42ca-8af3-8a0f09ef857d)
+![image](https://github.com/user-attachments/assets/d33083ff-9216-4542-b4e7-7ea524ecf1d2)
 
 ## RESULT
 The result of ideal sampling is a discrete-time signal that retains all the information of the original continuous-time signal is obtained and output is verified.
